@@ -1,0 +1,98 @@
+CyberOS - Multi-License Agreement
+=================================
+
+This project uses multiple licenses for different components:
+
+1. KERNEL COMPONENT LICENSE
+--------------------------
+The Linux kernel components are licensed under GNU General Public License v2 (GPL v2).
+
+GNU GENERAL PUBLIC LICENSE
+Version 2, June 1991
+
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+
+[For full GPL v2 text, see LICENSE-KERNEL]
+
+
+2. BOOTLOADER COMPONENT LICENSE
+--------------------------------
+The bootloader (GRUB2) and bootloader-specific code is licensed under Apache License 2.0.
+
+LICENSE BOILERPLATE:
+Copyright (c) 2025 XL-Elite
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+[For full Apache 2.0 text, see LICENSE-BOOT]
+
+
+3. UTILITIES & SCRIPTS LICENSE
+------------------------------
+Build scripts, utilities, and system management code are licensed under MIT License.
+
+MIT LICENSE
+
+Copyright (c) 2025 XL-Elite
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+[For full MIT text, see LICENSE]
+
+
+4. DOCUMENTATION LICENSE
+-----------------------
+All documentation and educational materials are licensed under
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+[For full CC BY-SA 4.0 text, see LICENSE-DOCS]
+
+
+5. THIRD-PARTY COMPONENTS
+-------------------------
+
+This project incorporates code from the following projects:
+
+- Linux Kernel: GPL v2
+- GRUB Bootloader: GPL v3
+- BusyBox: GPL v2
+- musl libc: MIT & other
+- util-linux: GPL v2+
+
+Each component retains its original license.
+
+
+DISCLAIMER
+----------
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+For questions about licensing, contact: legal@cyberos.dev
