@@ -21,6 +21,11 @@ mkdir -p "$BUILD_DIR"/{bin,sbin,etc,lib,usr,var,tmp,proc,sys,root,home,boot,dev,
 # Create standard directory structure
 mkdir -p "$BUILD_DIR"/{usr/{bin,sbin,lib,share},var/{log,run,tmp}}
 
+# Create network configuration directory
+mkdir -p "$BUILD_DIR/etc/network"
+mkdir -p "$BUILD_DIR/etc/rc.d"
+mkdir -p "$BUILD_DIR/etc/init.d"
+
 # Create necessary files
 cat > "$BUILD_DIR/etc/fstab" << 'EOF'
 # CyberOS filesystem mount table
@@ -69,10 +74,7 @@ auto eth0
 iface eth0 inet dhcp
 EOF
 
-# Create init scripts
-mkdir -p "$BUILD_DIR/etc/rc.d"
-mkdir -p "$BUILD_DIR/etc/init.d"
-
+# Create system initialization script
 cat > "$BUILD_DIR/etc/rc.d/rc.sysinit" << 'EOF'
 #!/bin/sh
 # System initialization script
@@ -108,9 +110,6 @@ exit 0
 EOF
 
 chmod +x "$BUILD_DIR/etc/rc.local"
-
-# Create symbolic links (for BusyBox integration)
-# In production, these would link to BusyBox
 
 # Set permissions
 chmod 755 "$BUILD_DIR"
